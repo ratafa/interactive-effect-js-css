@@ -53,6 +53,7 @@ ul li::before {
     background: #2e3133;
     top: 0;
     transform-origin: right;
+    /*참조 링크 - https://urliveblogger.blogspot.com/2021/01/css-transform-origin.html*/
     transform: skewY(45deg);
     transition: 0.5s;
 }
