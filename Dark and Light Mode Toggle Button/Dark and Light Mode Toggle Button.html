@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="toggle">
+    <i class="indicator"></i>
+</div>
+
+<script>
+    const body = document.querySelector('body');
+    const toggle = document.querySelector('.toggle');
+
+    toggle.addEventListener('click', function () {
+            body.classList.toggle('active');
+            this.classList.toggle('active');
+    })
+</script>
+<!--참조 영상 (Dark and Light Mode Toggle Button)-->
+<!-- https://www.youtube.com/watch?v=gzCUq_VQ7Y8-->
+</body>
+</html>

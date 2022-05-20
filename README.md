@@ -7,6 +7,6 @@
 > 주당 1개씩 커밋
 
 ## 방식
-> Online Tutorials의 CSS 영상을 보며 직접 만들어봅니다.
+> Online Tutorials의 CSS 영상을 보며 만들어보고, 다시 직접 만들어 봅니다.
 
 
