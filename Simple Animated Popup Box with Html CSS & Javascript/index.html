@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h2>Hello</h2>
+        <p>안녕하세요. 열심히 공부중입니다.<br> 더 노력하겠습니다.</p>
+    </div>
+    <div class="toggleBtn"> </div>
+</div>
+
+<script>
+    let toggleBtn = document.querySelector('.toggleBtn');
+    let container = document.querySelector('.container');
+    toggleBtn.addEventListener('click', () => {
+        container.classList.toggle('active');
+    })
+</script>
+<!--참조 영상-->
+<!--https://www.youtube.com/watch?v=3ygAZLEnG7I-->
+</body>
+</html>
