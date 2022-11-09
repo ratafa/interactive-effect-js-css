@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background: #2f364f;
+}
+
+.box {
+    display: flex;
+    transform: rotate(-25deg) skew(25deg);
+    /*display: flex를 하면 flex의 기본 방향값이 row이기에,
+    .box span이 가로로 꽉채워진다. 총 4개가 각각 전체 box의 25%값을 가지니
+    가로로 채워진다. 만약 flex-direction: column 으로 두면 이해가 될 것이다.*/
+    width: 840px;
+    height: 360px;
+    transition: 0.5s;
+}
+
+.box:hover {
+    transform: rotate(-25deg) skew(-25deg) translateY(-20px);
+}
+
+.box span {
+    width: 25%;
+    height: 100%;
+    /*span의 개수가 4개에서 전체 width의 25%로 해도 width를 100%한 값과 똑같다.*/
+    display: block;
+    transition: 0.5s;
+    background-image: url("beatles.jpeg");
+    background-position: calc(240px * var(--i));
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+.box:hover span:nth-child(odd){
+    transform: skewY(25deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
+}
+.box:hover span:nth-child(even){
+    transform: skewY(-25deg);
+}
+
+.box:hover span:last-child{
+    border-right: 5px solid #fff;
+}
+
+.box:hover span:first-child{
+    border-left: 5px solid #fff;
+}
