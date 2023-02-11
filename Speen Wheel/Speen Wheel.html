@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="spinBtn"></div>
+    <div class="wheel">
+        <div class="number" style="--i:1;--cir:#db7093">가</div>
+        <div class="number" style="--i:2;--cir:red">나</div>
+        <div class="number" style="--i:3;--cir:blue">다</div>
+        <div class="number" style="--i:4;--cir:green">라</div>
+        <div class="number" style="--i:5;--cir:black">마</div>
+        <div class="number" style="--i:6;--cir:orange">바</div>
+        <div class="number" style="--i:7;--cir:yellow">사</div>
+        <div class="number" style="--i:8;--cir:purple">아</div>
+    </div>
+</div>
+<script>
+    class App {
+        constructor() {
+            window.addEventListener('resize', () => {console.log(this)})
+        }
+    }
+        new App();
+</script>
+</body>
+</html>
+
+<!--https://www.youtube.com/watch?v=F3-lK_-PQr0&t=33s-->
